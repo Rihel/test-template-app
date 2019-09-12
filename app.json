@@ -1,0 +1,19 @@
+{
+  "appKey": "BpSMTirOCesvsI9JG5fGmbuEG5bKp3wc",
+  "appSecret": "5m92WoSRbbV9RGmBVG8zluTVtlDN504H",
+  "projectId": 96,
+  "id": 168,
+  "name": "test-template-app",
+  "framework": "vue",
+  "platform": "pc",
+  "description": "",
+  "git": {
+    "url": "https://github.com/Rihel/test-template-app.git",
+    "isPrivate": 0,
+    "username": "rihel",
+    "password": "Dqshanshan0327"
+  },
+  "alias": {},
+  "pages": [],
+  "dependencies": []
+}

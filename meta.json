@@ -1,0 +1,16 @@
+{
+    "name": "nuxt-mall-admin",
+    "version": "1.0.0",
+    "title": "Nuxt 购物中心管理后台",
+    "description": "",
+    "type": "template",
+    "platform": [
+        "PC"
+    ],
+    "homePage": "/materials/24/disteafde41b7c8698d734582df2480406c9/index.html",
+    "category": "",
+    "screenshot": "/screenshots/eafde41b7c8698d734582df2480406c9.png",
+    "path": "templates/NuxtMallAdmin",
+    "origin": "http://gitlab.deepexi.top/deepexi/deepexi-serverless/serverless-material.git",
+    "hash": "eafde41b7c8698d734582df2480406c9"
+}

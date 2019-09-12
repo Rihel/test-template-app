@@ -1,0 +1,55 @@
+#!/usr/bin/env expect
+
+set host [lindex $argv 0]
+set username [lindex $argv 1]
+set password [lindex $argv 2]
+set target [lindex $argv 3]
+
+set cmd_prompt "~.*(#|$)"
+
+# 打包
+spawn tar -czvf dist.tar.gz -C dist .
+
+# 上传
+expect eof
+spawn scp dist.tar.gz $username@$host:$target
+
+expect {
+  "(yes/no)?"  {
+    send "yes\r"
+    expect "*assword:" {
+      send "$password\r"
+    }
+  }
+  "*assword:"  {
+    send "$password\r"
+  }
+}
+expect "100%"
+send_user "\n"
+
+# SSH
+spawn ssh $username@$host
+
+expect {
+  "(yes/no)?"  {
+    send "yes\r"
+    expect "*assword:" {
+      send "$password\r"
+    }
+  }
+  "*assword:"  {
+    send "$password\r"
+  }
+}
+
+# 解压
+expect -re $cmd_prompt
+send "tar -zxvf $target/dist.tar.gz -C $target\r"
+
+# 删除压缩包
+expect -re $cmd_prompt
+send "rm -r $target/dist.tar.gz\r"
+
+expect -re $cmd_prompt
+exit
