@@ -1,19 +1,18 @@
 {
-  "appKey": "BpSMTirOCesvsI9JG5fGmbuEG5bKp3wc",
-  "appSecret": "5m92WoSRbbV9RGmBVG8zluTVtlDN504H",
-  "projectId": 96,
-  "id": 168,
   "name": "test-template-app",
-  "framework": "vue",
-  "platform": "pc",
   "description": "",
-  "git": {
-    "url": "https://github.com/Rihel/test-template-app.git",
-    "isPrivate": 0,
-    "username": "rihel",
-    "password": "Dqshanshan0327"
+  "dependencies": {
+    "waterfall-chart": "1.0.0"
   },
   "alias": {},
+  "appKey": "BpSMTirOCesvsI9JG5fGmbuEG5bKp3wc",
+  "appSecret": "5m92WoSRbbV9RGmBVG8zluTVtlDN504H",
+  "framework": "vue",
+  "id": 168,
+  "links": {
+    "WaterfallChart": "packages/@serverless/pages/WaterfallChart/src/index.vue"
+  },
   "pages": [],
-  "dependencies": []
+  "platform": "pc",
+  "projectId": 96
 }

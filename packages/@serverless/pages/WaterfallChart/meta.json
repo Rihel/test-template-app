@@ -1,0 +1,14 @@
+{
+  "name": "waterfall-chart",
+  "version": "1.0.0",
+  "title": "v-chart瀑布图",
+  "description": "v-chart瀑布图",
+  "type": "page",
+  "platform": ["PC"],
+  "homePage": "/materials/24/distc6cf8aa6cba408e919f2c8454375cc72/index.html",
+  "category": "图表",
+  "screenshot": "/screenshots/24/c6cf8aa6cba408e919f2c8454375cc72/1567587142075.png",
+  "path": "pages/WaterfallChart",
+  "origin": "http://gitlab.deepexi.top/deepexi/deepexi-serverless/serverless-material.git",
+  "hash": "c6cf8aa6cba408e919f2c8454375cc72"
+}

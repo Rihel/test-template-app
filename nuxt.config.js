@@ -11,14 +11,10 @@ const mockServer = 'http://39.98.50.163:3000/mock/1399/'
 // 不能以斜杠结尾
 let apiServer = process.env.API_SERVER || '/'
 
-const metaJson = require('./meta.json')
-const materialJson = require('../../material.json')
-const outputDir = `dist${metaJson.hash}`
-const ossPath = `http://serverless-platform.deepexi.top/materials/${
-  materialJson.materialId
-}/${outputDir}`
+const appJson = require('./app.json')
+const ossPath = `http://serverless-platform.deepexi.top/applications/${appJson.appKey}`
 
-const publicPath = process.env.NODE_ENV === 'production' ? ossPath : ''
+const publicPath = process.env.BUILD_TYPE === 'production' ? ossPath : '/_nuxt/'
 
 const config = {
   aliIconFont: '',
@@ -63,9 +59,6 @@ module.exports = {
    ** Build configuration
    */
 
-  generate: {
-    dir: outputDir
-  },
   build: {
     publicPath,
     extractCSS: true,
